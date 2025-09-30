@@ -1,0 +1,48 @@
+.indicator {
+    display: flex;
+    width: 24px;
+    height: 12px;
+    border-radius: 0 4px 4px 24px;
+}
+
+.indicator.pending {
+    background-color: #f1c40f; /* жёлтый: ожидание */
+}
+
+.indicator.inProgress {
+    background-color: #3498db; /* синий: процесс идёт */
+}
+.indicator.done {
+    background-color: #2ecc71; /* зелёный: готово */
+}
+.indicator.def {
+    background-color: #D9D9D9; /* зелёный: готово */
+}
+.status {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    height: 20px;
+    padding: 8px;
+    margin-right: 8px;
+    border-radius: 8px;
+    font-weight: 700;
+    color: #242424;
+    cursor: pointer;
+}
+.status.pending {
+    background-color: #f1c40f;
+}
+.status.inProgress {
+    background-color: #3498db;
+}
+.status.done {
+    background-color: #2ecc71;
+}
+.status.def {
+    background-color: #D9D9D9;
+}
+p {
+    margin: 0;
+}
+

@@ -1,0 +1,118 @@
+.creat-task {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(43, 43, 43, 0.2);
+    backdrop-filter: blur(4px);
+
+    opacity: 1;
+    pointer-events: all;
+    transition: opacity 0.3s ease;
+    transform: scale(1);
+}
+.creat-task.closed{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 80px);
+    height: calc(100vh - 200px);
+    max-width: 900px;
+    background-color: #D5CCFF;
+    border-radius: 12px;
+    padding: 40px;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+.container.closed{
+    transform: scale(0.9);
+}
+.btm-cnt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: min-content;
+}
+.close-btn {
+    width: 50px;
+    height: 30px;
+    background-color: rgba(36, 36, 36, 0);
+    border: 4px solid #2B1887;
+    border-radius: 8px;
+    color: #2B1887;
+    font-weight: bold;
+    cursor: pointer;
+}
+.title {
+    font-size:larger;
+    color: #242424;
+}
+.title.error{
+    color: darkred;
+    animation: shake 0.5s ease-in-out;
+}
+.title-input{
+    height:60px;
+    background-color: white;
+    border:none;
+    border-radius: 12px;
+    padding: 0 20px;
+    color: #242424;
+    outline: none;
+    resize: none;
+}
+.desc {
+    margin-top: 50px;
+    color: #242424;
+}
+.desc.error{
+    color: darkred;
+    animation: shake 0.5s ease-in-out;
+}
+.desc-input {
+    flex: 1;
+    align-items: start;
+    background-color: white;
+    border:none;
+    border-radius: 12px;
+    padding: 20px;
+    color: #242424;
+    outline: none;
+    resize: none;
+}
+.create {
+    margin-top: 50px;
+    height: 50px;
+    background-color: #2B1887;
+    font-size: larger;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.create.nonactive {
+    background-color: #242424;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(-5px); }
+    20% { transform: translateX(5px); }
+    30% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    50% { transform: translateX(-5px); }
+    60% { transform: translateX(5px); }
+    70% { transform: translateX(-5px); }
+    80% { transform: translateX(5px); }
+    90% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+

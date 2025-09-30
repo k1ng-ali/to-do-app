@@ -1,0 +1,20 @@
+.Task {
+    background-color: white;
+    width: calc(100% - (1.5*2rem));
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+.bottom-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.delete-icon {
+    width: 30px;
+    height: 30px;
+    color: darkred;
+    cursor: pointer;
+}

@@ -1,0 +1,8 @@
+.StatusBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.Indicator {
+    margin-left: 12px;
+}
