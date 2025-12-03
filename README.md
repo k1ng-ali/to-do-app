@@ -2,4 +2,4 @@
 
 заддержка в странице из-за не поднятого сервреа, фронтент работает через localStorage когда не получится покдлючиться к серверу.
 
-Бэкенд: [https://github.com/k1ng-ali?tab=repositories](https://github.com/k1ng-ali/to-do-backend)
+Бэкенд: [Бэкенд](https://github.com/k1ng-ali/to-do-backend)
